@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Booking Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Hotel Booking Registration form</form></h1>
+
+  <div class="form-container">
+    <form id="registrationForm">
+      <div class="form-group">
+        <label for="name">Customer Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="checkInDate">Check-in Date:</label>
+        <input type="date" id="checkInDate" name="checkInDate" required>
+      </div>
+
+      <div class="form-group">
+        <label for="totalDays">Total Number of Days:</label>
+        <input type="number" id="totalDays" name="totalDays" min="1" required>
+      </div>
+
+      <div class="form-group">
+        <label for="totalPersons">Total Number of Persons:</label>
+        <input type="number" id="totalPersons" name="totalPersons" min="1" required>
+      </div>
+
+      <div class="form-group">
+        <label for="roomType">Select Room Type:</label>
+        <select id="roomType" name="roomType" required>
+          <option value="delux">Delux Room</option>
+          <option value="suite">Suite Room</option>
+        </select>
+      </div>
+
+
+      <div class="form-group">
+        <label>Amenities:</label>
+        <div class="checkbox">
+          <label><input type="checkbox" name="amenities" value="AC"> AC</label>
+        </div>
+        <div class="checkbox">
+          <label class="box"><input type="checkbox" name="amenities" value="Locker"> Locker</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="advancePayment">Advance Payment:</label>
+        <input type="number" id="advancePayment" name="advancePayment" min="1000" required>
+      </div>
+
+      <div class="form-group">
+        <label>Total Amount:</label>
+        <span id="totalAmount" class="amount"></span>
+      </div>
+
+      <div class="form-group">
+        <label>Room Cost:</label>
+        <span id="roomCost" class="amount"></span>
+      </div>
+
+      <div class="form-group">
+        <label>Amenities Cost:</label>
+        <span id="amenitiesCost" class="amount"></span>
+      </div>
+
+      <div class="form-group">
+        <label>Extra Persons Cost:</label>
+        <span id="extraPersonsCost" class="amount"></span>
+      </div>
+
+      <div class="form-group">
+        <label>Balance Amount:</label>
+        <span id="balanceAmount" class="amount"></span>
+      </div>
+
+      <div class="form-group button-container">
+        <button class="register" type="submit">submit</button>
+      </div>
+    </form>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
